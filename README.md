@@ -21,7 +21,13 @@ The repository accompanies the paper **“Green Agentic AI: An Energy-Aware Disc
 | compare several trajectories | [`templates/trajectory-comparison.csv`](templates/trajectory-comparison.csv) |
 | review a card before release | [`CHECKLIST.md`](CHECKLIST.md) |
 
-## Figure
+## How to apply the protocol
+
+<p align="center">
+  <img src="Green-Agentic-AI-Protocol-Workflow.png"
+       alt="Green Agentic AI protocol workflow from user goal and task classification through the Sustainability Contract, agent trajectory, trajectory log, Agent Trajectory Card, and downstream comparison, audit, benchmarking, and optimization"
+       width="760">
+</p>
 
 ## Reusable artifacts
 
