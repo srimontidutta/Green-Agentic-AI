@@ -1,0 +1,4 @@
+depth,fields
+minimal,model-call count; model tiers; token class; tool calls; retries; energy proxy class
+standard,minimal fields plus retrieval/cache use; verification; code execution; memory access; latency; uncertainty; optimization notes
+audit-grade,standard fields plus timestamps; configuration; provider; region; telemetry hooks; policy overrides

@@ -1,0 +1,17 @@
+agent_trajectory_card:
+  reporting_unit: single run
+  goal_type: research summary with citations
+  contract_used: cache-first; retrieve authoritative sources before generation; small-
+    or medium-model synthesis; one targeted verifier; escalate on uncertainty or verifier
+    failure
+  workflow_pattern: contract-guided research agent
+  model_call_count: 3
+  model_tiers:
+  - small
+  - medium
+  token_class: medium
+  retrieval_count: 2
+  tool_call_count: 2
+  verification_passes: 1
+  retry_count: 0
+  energy_proxy_class: C

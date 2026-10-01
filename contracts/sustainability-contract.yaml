@@ -1,0 +1,19 @@
+agentic_sustainability_contract:
+  task_risk_class:
+  model_tier_budget:
+    allowed_tiers: []
+    escalation_conditions:
+  token_budget:
+    input:
+    context_expansion:
+    output:
+  tool_code_budget:
+    tool_calls:
+    browser_actions:
+    database_queries:
+    code_runs:
+  retrieval_cache_rule:
+  retry_budget:
+  verification_rule:
+  escalation_rule:
+  disclosure_rule:

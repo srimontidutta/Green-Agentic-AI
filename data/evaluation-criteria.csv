@@ -1,0 +1,6 @@
+criterion,description
+Coverage,Captures the main energy-relevant events in agentic workflows.
+Actionability,"Maps reported fields to control levers such as routing, budgets, retry caps, verifier triggers, or cache policy."
+Comparability,Distinguishes systems with similar outputs by trajectory behavior.
+Auditability,Supports inspection without relying on proprietary provider internals.
+Safety preservation,"Preserves required verification, refusal, escalation, or human review for higher-risk tasks."

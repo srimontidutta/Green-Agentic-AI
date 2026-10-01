@@ -1,0 +1,15 @@
+# Agentic Sustainability Contract fields
+
+| Field | Purpose |
+|---|---|
+| Task/risk class | Determines whether energy-saving routes may be used or overridden |
+| Model-tier budget | Specifies allowed model tiers and escalation conditions |
+| Token budget | Bounds input, context expansion, and output length |
+| Tool/code budget | Limits external calls, browser actions, database queries, and sandbox runs |
+| Retrieval/cache rule | Defines cache-first, retrieve-first, or cache-forbidden behavior |
+| Retry budget | Caps reflection loops and repeated attempts |
+| Verification rule | Defines when citation, safety, correctness, or policy checks are required |
+| Escalation rule | Specifies uncertainty, risk, or verifier-failure triggers |
+| Disclosure rule | Selects minimal, standard, or audit-grade reporting |
+
+The contract records the execution constraints associated with a trajectory. Safety, correctness, compliance, and required review remain part of the execution decision.

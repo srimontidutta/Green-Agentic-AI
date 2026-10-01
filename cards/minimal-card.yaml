@@ -1,0 +1,10 @@
+agent_trajectory_card:
+  reporting_unit: null
+  goal_type: null
+  risk_class: null
+  model_call_count: null
+  model_tiers: []
+  token_class: null
+  tool_call_count: null
+  retry_count: null
+  energy_proxy_class: null

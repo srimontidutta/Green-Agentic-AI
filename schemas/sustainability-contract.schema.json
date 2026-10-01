@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agentic Sustainability Contract",
+  "type": "object",
+  "properties": {
+    "agentic_sustainability_contract": {
+      "type": "object",
+      "properties": {
+        "task_risk_class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_tier_budget": {
+          "type": "object",
+          "properties": {
+            "allowed_tiers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "escalation_conditions": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "token_budget": {
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": [
+                "string",
+                "number",
+                "integer",
+                "null"
+              ]
+            },
+            "context_expansion": {
+              "type": [
+                "string",
+                "number",
+                "integer",
+                "null"
+              ]
+            },
+            "output": {
+              "type": [
+                "string",
+                "number",
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "tool_code_budget": {
+          "type": "object",
+          "properties": {
+            "tool_calls": {
+              "type": [
+                "string",
+                "integer",
+                "null"
+              ]
+            },
+            "browser_actions": {
+              "type": [
+                "string",
+                "integer",
+                "null"
+              ]
+            },
+            "database_queries": {
+              "type": [
+                "string",
+                "integer",
+                "null"
+              ]
+            },
+            "code_runs": {
+              "type": [
+                "string",
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "retrieval_cache_rule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retry_budget": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ]
+        },
+        "verification_rule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "escalation_rule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "disclosure_rule": {
+          "enum": [
+            "minimal",
+            "standard",
+            "audit-grade",
+            null
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "agentic_sustainability_contract"
+  ],
+  "additionalProperties": false
+}

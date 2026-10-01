@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Trajectory Card",
+  "type": "object",
+  "properties": {
+    "agent_trajectory_card": {
+      "type": "object",
+      "properties": {
+        "reporting_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "goal_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "risk_class": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "safety-critical",
+            null
+          ]
+        },
+        "contract_used": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "workflow_pattern": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_call_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "model_tiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "token_class": {
+          "enum": [
+            "small",
+            "medium",
+            "large",
+            "very_large",
+            null
+          ]
+        },
+        "retrieval_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cache_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tool_call_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "tool_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "code_run_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "verification_passes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "verification_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retry_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "retry_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "memory_events": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "multi_agent": {
+          "type": "object",
+          "properties": {
+            "agent_count": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "debate_flag": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "escalation_flag": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "latency_class": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            null
+          ]
+        },
+        "energy_proxy_class": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            null
+          ]
+        },
+        "carbon_aware_scheduling": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "optimization_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "safety_override": {
+          "type": [
+            "boolean",
+            "string",
+            "null"
+          ]
+        },
+        "telemetry_available": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            null
+          ]
+        },
+        "trajectory_binding": {
+          "type": "object",
+          "properties": {
+            "timestamps": {
+              "type": [
+                "string",
+                "array",
+                "null"
+              ]
+            },
+            "configuration": {
+              "type": [
+                "string",
+                "object",
+                "null"
+              ]
+            },
+            "provider": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "region": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "telemetry_hooks": {
+              "type": [
+                "string",
+                "array",
+                "object",
+                "null"
+              ]
+            },
+            "policy_overrides": {
+              "type": [
+                "string",
+                "array",
+                "object",
+                "null"
+              ]
+            },
+            "direct_telemetry": {
+              "type": [
+                "string",
+                "number",
+                "object",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "agent_trajectory_card"
+  ],
+  "additionalProperties": false
+}

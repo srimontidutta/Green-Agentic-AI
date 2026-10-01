@@ -1,0 +1,1 @@
+trajectory_id,event_index,event_type,event_detail,model_tier,token_class,cache_status,tool_type,verification_type,retry_reason,memory_operation,agent_count,escalation,timestamp,notes

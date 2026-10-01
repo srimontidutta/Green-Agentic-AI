@@ -1,0 +1,12 @@
+primitive,energy_driver,disclosure_field
+Task classification,classifier or model call,task and risk class
+Retrieval,"embedding, search, storage, network",retrieval count; cache hit/miss
+Planning,reasoning tokens; planner calls,planning depth or class
+Generation,model tier; context and output length,model tiers; token class
+Tool execution,"API, browser, database, I/O",tool-call count and type
+Code execution,sandbox compute; repeated tests,code-run count
+Verification,additional model or tool calls,verifier count and type
+Retry,multiplicative calls and tokens,retry count and reason
+Memory access,storage access; retrieval cost; write frequency,memory read/write count
+Multi-agent coordination,parallel/sequential model calls,agent count; debate flag
+Human escalation,latency/operational cost; review effort,escalation flag

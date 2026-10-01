@@ -1,0 +1,20 @@
+field,description,example_value
+Goal type,User task category,research summary; coding fix; support answer
+Risk class,Safety and accountability level,low; medium; high; safety-critical
+Contract used,Energy-aware execution rule,retrieve-first + small-first + verify-on-risk
+Workflow pattern,Main agent architecture,RAG + verifier; tool-using; coding; multi-agent
+Model tiers used,Relative model classes rather than vendor names,small to medium escalation
+Model-call count,Total model invocations,5
+Token class,Approximate input/context/output volume,small; medium; large; very large
+Tool-call count,"External APIs, browser, database, or service calls",3
+Retrieval/cache use,Retrieval and cache behavior,cache miss; two retrieval calls
+Code execution,"Sandbox, script, or test executions",0; static check only; 4 tests
+Verification passes,"Checks for correctness, citations, safety, or policy",one citation verifier
+Retries/reflections,Repeated attempts and reasons,one retry after verifier failure
+Memory access,Persistent or episodic memory operations,none; two reads; one write
+Latency class,Approximate execution-time class,low; medium; high
+Energy proxy class,Coarse trajectory energy category,A; B; C; D; E
+Carbon-aware scheduling,"Whether grid, region, or time was considered",no; batchable; carbon-aware window
+Safety override,Whether energy limits were overridden,"yes, due to high-risk task"
+Uncertainty,Confidence in the disclosure estimate,low; medium; high
+Optimization note,Suggested improvement,cache repeated retrievals; cap debate

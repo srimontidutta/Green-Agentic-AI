@@ -1,0 +1,30 @@
+agent_trajectory_card:
+  reporting_unit: null
+  goal_type: null
+  risk_class: null
+  contract_used: null
+  workflow_pattern: null
+  model_call_count: null
+  model_tiers: []
+  token_class: null
+  retrieval_count: null
+  cache_status: null
+  tool_call_count: null
+  tool_types: []
+  code_run_count: null
+  verification_passes: null
+  verification_type: null
+  retry_count: null
+  retry_reason: null
+  memory_events: null
+  multi_agent:
+    agent_count: null
+    debate_flag: null
+  escalation_flag: null
+  latency_class: null
+  energy_proxy_class: null
+  carbon_aware_scheduling: null
+  optimization_note: null
+  safety_override: null
+  telemetry_available: null
+  uncertainty: null

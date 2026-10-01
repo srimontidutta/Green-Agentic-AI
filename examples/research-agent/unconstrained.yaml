@@ -1,0 +1,13 @@
+agent_trajectory_card:
+  reporting_unit: single run
+  goal_type: research summary with citations
+  workflow_pattern: research agent with search and citation verification
+  model_call_count: 7
+  model_tiers:
+  - large
+  token_class: large
+  retrieval_count: 5
+  tool_call_count: 6
+  verification_passes: 2
+  retry_count: 2
+  energy_proxy_class: D
